@@ -132,13 +132,13 @@ class PreviewControlViewSample : ConstraintLayout, View.OnClickListener {
     /**
      * 关闭预览
      */
-    private fun stopPreview() {
+     fun stopPreview() {
         playWindowView?.let {
             val playWindowView = it
             playWindowView.stopPlay()
             playWindowView.showPlayIdle()
         }
-    }
+     }
 
 
     /**

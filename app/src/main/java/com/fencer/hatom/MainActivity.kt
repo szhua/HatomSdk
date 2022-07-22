@@ -13,8 +13,9 @@ class MainActivity : AppCompatActivity() {
         val beginTransaction = supportFragmentManager.beginTransaction()
         beginTransaction.add (R.id.main_container, VideoPlayFragment.getInstance(PlayConfig().apply {
             autoPlay=true
-            url = "rtsp://221.2.205.44:554/openUrl/dEDyYCY"
+            url = "rtsp://221.2.205.44:554/openUrl/E58wyvm"
             hiddenController=true
+            screenRatio = "h,16:10"
         }))
         beginTransaction.commit()
     }

@@ -34,7 +34,7 @@ android {
 
 afterEvaluate {
     publishing {
-        def versionName = "1.0.0" // 当前版本依赖库版本号，这个jitpack不会使用到，只是我们开发者自己查看
+        def versionName = "1.0.1" // 当前版本依赖库版本号，这个jitpack不会使用到，只是我们开发者自己查看
         publications {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
@@ -86,7 +86,6 @@ dependencies {
     implementation 'com.guolindev.permissionx:permissionx:1.6.4'
     //Gson
     implementation 'com.google.code.gson:gson:2.8.5'
-
 
 
 
