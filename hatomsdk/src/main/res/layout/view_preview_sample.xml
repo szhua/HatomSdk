@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+
+    <!--  流量展示  -->
+    <TextView
+        android:id="@+id/trafficText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        tools:text="999.99 KB/s 999.9M"
+        android:textColor="@color/black_90"
+        android:textSize="10sp"
+        android:paddingStart="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!--预览开关、对讲开关-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startPreviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="#74B32A"
+            android:text="@string/start_preview"
+            android:textColor="@color/black_90"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/stopPreviewButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stopPreviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:textColor="@color/black_90"
+            android:backgroundTint="#C9291D"
+            android:text="@string/stop_preview"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

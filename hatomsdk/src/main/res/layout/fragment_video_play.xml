@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.fencer.hatomsdk.PlayWindowView
+        android:id="@+id/play_window"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        app:layout_constraintDimensionRatio="h,16:9"
+        android:layout_height="0dp"/>
+
+
+    <com.fencer.hatomsdk.PreviewControlViewSample
+        android:background="#552b2b2b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/sample_controller_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
