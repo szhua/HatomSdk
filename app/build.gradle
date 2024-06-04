@@ -13,10 +13,6 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        ndk {
-            abiFilters  "armeabi-v7a"
-            // 指定要ndk须要兼容的架构(这样其余依赖包里mips,x86,armeabi,arm-v8之类的so会被过滤掉)
-        }
     }
 
     buildTypes {
